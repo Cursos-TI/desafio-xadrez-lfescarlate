@@ -3,6 +3,7 @@
 int main() {
 
     int movimentoBispo = 0, movimentoRainha = 0;
+    int movimentoCavalo;
 
     //Simular o movimento de três peças Torre, Bispo e Rainha. Cada peça tem que utilizar
     //uma estrutura de repetição diferente (for, while e do-while) para simular o movimento
@@ -15,6 +16,8 @@ int main() {
     for (int i = 0; i < 5; i++) {
         printf("Torre: Direita\n"); // Imprime a direção do movimento
     }
+
+    printf("\n");
     
     //Bispo: Move-se na diagonal. Seu programa deverá simular o movimento do Bispo cinco casas na diagonal para cima e à direita.
     //Para representar a diagonal, você imprimirá a combinação de duas direções a cada casa (ex: "Cima, Direita").
@@ -24,11 +27,31 @@ int main() {
         movimentoBispo++;
     }
 
+    printf("\n");
+
     //Rainha: Move-se em todas as direções. Seu programa deverá simular o movimento da Rainha oito casas para a esquerda.
     do {
         printf("Rainha: Esquerda\n");
         movimentoRainha++;
     } while (movimentoRainha < 8);
 
+    printf("\n");
+
+    //Cavalo se move duas casas em uma direção (horizontal ou vertical) e depois uma casa perpendicularmente, formando um "L". 
+    //Para este desafio, o Cavalo deverá se mover duas casas para baixo e uma casa para a esquerda
+
+    for (int movimentoCavalo = 0; movimentoCavalo < 2; movimentoCavalo++) {
+        int i = 0;
+
+        while (i < 1) {
+            printf("Baixo ");
+            if (movimentoCavalo == 1) {
+                printf("Esquerda");
+            }
+            i++;
+        }  
+    
+    }
+    
     return 0;
 }
